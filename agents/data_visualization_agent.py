@@ -22,6 +22,7 @@ class DataVisualizationAgent(BaseAgent):
         ]
 
     async def process(self, input_data: Dict[str, Any]) -> AgentResult:
+        print("data visualizer was called")
         """
         Expected input:
         - files: CSV files OR

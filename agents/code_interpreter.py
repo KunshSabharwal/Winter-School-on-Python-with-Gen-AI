@@ -30,6 +30,7 @@ class CodeInterpreterAgent(BaseAgent):
         ]
 
     async def process(self, input_data: Dict[str, Any]) -> AgentResult:
+        print("code interpreter called")
         query = input_data.get("query", "")
         context = input_data.get("context", {})
         files = input_data.get("files", {})
