@@ -10,6 +10,7 @@ import google.generativeai as genai
 from .base_agent import BaseAgent, AgentResult
 from .code_interpreter import CodeInterpreterAgent
 from .answer_synthesiser import AnswerSynthesiserAgent
+from .data_visualization_agent import DataVisualizationAgent
 
 
 
@@ -30,6 +31,7 @@ class AgentOrchestrator:
         self.agents: Dict[str, BaseAgent] = {
             "CodeInterpreter": CodeInterpreterAgent(api_key),
             "AnswerSynthesiser": AnswerSynthesiserAgent(api_key),
+            "DataVisualizer":DataVisualizationAgent(api_key), # agent added by me for data visualization
             # Add your custom agents here:
             # "YourCustomAgent": YourCustomAgent(api_key),
         }
@@ -207,11 +209,13 @@ class AgentOrchestrator:
                         - If the query is a general question, explanation, or clarification, choose AnswerSynthesiser
                         - If the query asks about previous results/insights, choose AnswerSynthesiser
                         - If the query is conversational (hello, thanks, what can you do), choose AnswerSynthesiser
+                        - If the query asks for charts, graphs, plots or visualization, choose DataVisualizer
                         - DEFAULT: For simple questions or queries without data files, choose AnswerSynthesiser
 
                         Respond with ONLY ONE of these exact names:
                         - CodeInterpreter
                         - AnswerSynthesiser
+                        - DataVisualizer
 
                         Your response (agent name only):"""
 

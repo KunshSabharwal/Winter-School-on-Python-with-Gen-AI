@@ -100,3 +100,14 @@ Available Agents -
   - Synthesize final answers from analysis
   - Format responses with markdown
   - Handle conversational queries
+
+### Agents dont follow any fixed standards, they often create and follow their own
+
+1. Workflow - The flow of data and the generated outputs from one to the other agent from the time the input is given, till the time the final output is generated.
+2. HandOff Routing - Passing the parcel - Passes the data and the current state of the output to the other agent. Free to call oher agents for the future works
+3. Agents as Tools - Agents are tools that should be able to extract the required inputs from the given prompt and pass that to the agent which acts as a tool to execute the task.
+4. Reflection - The agent learns overtime and fixes the errors that it makes. It may sometime get infinitely stuck in improvement so we set a parameter that is the MaximumDepthOfAnAgent.
+5. LLM as a Judge - The LLM should be able to select the best response from the agent to get the most accurate response. The issue here is that we assume the biggest/largest model as the best one due to which there is a bias and we may get incorrect answer from that agent.
+6. Planning - Create a plan and make small checkpoints that are completed and ticked off over time the agent works and the work is done.
+7. The Supervisor - The supervisor makes the call of which agent will work and orchastrates the entire process to get the output, not explicitly doing anything to solve the problem/query itself.
+8. Multi-Agent Collaboration - Multiple agents for multiple tasks and all agents have separate capabilities. We maintain another variable called 'state' to maintain the state of the agent at present to decide which agent gets the memory.
