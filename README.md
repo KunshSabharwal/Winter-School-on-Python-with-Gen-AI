@@ -92,9 +92,11 @@ Every agent must:
 Available Agents -
 
 - CodeInterpreter
+
   - Execute Python code for data analysis
   - Load and analyze CSV files
   - Perform statistical analysis
+
 - AnswerSynthesiser
 
   - Answer general questions
