@@ -133,7 +133,7 @@ Available Agents -
 
 - Thanks to @JaskiratSingh for the session on RAG systems and the hands on coding for the Winter School Python with Gen AI_Day-2_Rag-agent Colab notebook.
 
-### Framework and not an architecutre
+### RAG is a framework and not an architecutre
 
 - Framework that combines the question and the relevant chunks to obtain the answer.
 - The asked question by the user is checked by retriever that retrieves that fixed data from the knowledge base (which is separated and broken down into chunks and embedded into numerical values, each numerical value of a word is mapped to the word itself, which finally passes the word chunks) to the LLM instead of the complete knowledge base at once. Only the relevant chunk of the knowledge base is passed (Context Window Problem - fixed LLM memory causes LLM's to forget crucial details in long chats/conversations leading to errors, hallucinations, and decreased accuracy)
