@@ -2,7 +2,7 @@
 
 ### Thanks to @https://github.com/Knighthawk-Leo/WorkShopTemplate for the repository and the session
 
-## Prompt Engineering Patterns
+# Day 1 -> Prompt Engineering Patterns
 
 1. Role Prompting - Make the model assume itself as someone or something
 2. Step by Step Thinking - Give enough context with only few prompts to save space in context
