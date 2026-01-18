@@ -1,6 +1,6 @@
 ## Forked from @https://github.com/Knighthawk-Leo/WorkShopTemplate
 
-### Thanks to @https://github.com/Knighthawk-Leo/WorkShopTemplate for the repository and the session
+### Thanks to @https://github.com/Knighthawk-Leo for the repository and the session
 
 # Day 1 -> Prompt Engineering Patterns
 
